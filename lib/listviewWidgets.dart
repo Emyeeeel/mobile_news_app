@@ -473,89 +473,244 @@ class VerticalList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+      padding: const EdgeInsets.fromLTRB(0, 0, 20, 20),
       child: SizedBox(
-        width: 208,
-        height: 88,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-          child: Row(
-            children: [
-              Stack(
-                children: [
-                  SizedBox(
-                    width: 70,
-                    height: 70,
-                    child: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          image: const DecorationImage(
-                              image: AssetImage("assets/png/listview2_2.png"))),
-                    ),
-                  ),
-                  Positioned(
-                    top: (70 - 18) / 2,
-                    left: (70 - 18) / 2,
-                    child: SizedBox(
-                      child: SvgPicture.asset('assets/svg/play_icon.svg'),
-                      width: 18,
-                      height: 18,
-                    ),
-                  )
-                ],
-              ),
-              const SizedBox(
-                width: 11,
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+        width: 315,
+        height: 100,
+        child: Row(
+          children: [
+            Stack(
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: const Color(0xFFFFFFFF)),
+                ),
+                Container(
+                  width: 90,
+                  height: 90,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      image: const DecorationImage(
+                          image: AssetImage('assets/png/listview3.png'))),
+                )
+              ],
+            ),
+            const SizedBox(
+              width: 14,
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 5.105, 0, 5.105),
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                    'China',
+                    'News: Politics',
                     style: TextStyle(
                       fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
+                      fontSize: 10,
+                      fontWeight: FontWeight.w800,
                       color: Color(0xFF9397A0),
                     ),
                   ),
                   const SizedBox(
-                    height: 3,
+                    height: 10,
                   ),
                   const Text(
-                    'Trading',
+                    'Iran\'s raging protests',
                     style: TextStyle(
                       fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0),
+                      fontSize: 14,
+                      fontWeight: FontWeight.w800,
+                      color: Color(0xFF19202D),
                     ),
                   ),
                   const SizedBox(
-                    height: 9,
+                    height: 4,
+                  ),
+                  const Text(
+                    'Fifth Iranian paramilitary me...',
+                    style: TextStyle(
+                      fontFamily: 'Gellix',
+                      fontSize: 14,
+                      fontWeight: FontWeight.w800,
+                      color: Color(0xFF19202D),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
                   ),
                   Row(
                     children: [
-                      SvgPicture.asset('assets/svg/eye_icon.svg'),
-                      const SizedBox(
-                        width: 4,
+                      Row(
+                        children: [
+                          SvgPicture.asset('assets/svg/calendar_icon.svg'),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          const Text(
+                            '16th May',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 11,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFF9397A0),
+                            ),
+                          ),
+                        ],
                       ),
-                      const Text(
-                        '40,999',
-                        style: TextStyle(
-                          fontFamily: 'Gellix',
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xFF9397A0),
-                        ),
+                      const SizedBox(
+                        width: 55,
+                      ),
+                      Row(
+                        children: [
+                          SvgPicture.asset('assets/svg/time_icon.svg'),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          const Text(
+                            '09 : 32 pm',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 11,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFF9397A0),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   )
                 ],
-              )
-            ],
-          ),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class VerticalList_2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(0, 0, 20, 20),
+      child: SizedBox(
+        width: 315,
+        height: 100,
+        child: Row(
+          children: [
+            Stack(
+              children: [
+                Container(
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: const Color(0xFFFFFFFF)),
+                ),
+                Container(
+                  width: 90,
+                  height: 90,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      image: const DecorationImage(
+                          image: AssetImage('assets/png/listview3_2.png'))),
+                )
+              ],
+            ),
+            const SizedBox(
+              width: 14,
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 5.105, 0, 5.105),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'News: Science',
+                    style: TextStyle(
+                      fontFamily: 'Gellix',
+                      fontSize: 10,
+                      fontWeight: FontWeight.w800,
+                      color: Color(0xFF9397A0),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
+                    'Putin to host ceremony',
+                    style: TextStyle(
+                      fontFamily: 'Gellix',
+                      fontSize: 14,
+                      fontWeight: FontWeight.w800,
+                      color: Color(0xFF19202D),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 4,
+                  ),
+                  const Text(
+                    'annexing occupied Ukrainia...',
+                    style: TextStyle(
+                      fontFamily: 'Gellix',
+                      fontSize: 14,
+                      fontWeight: FontWeight.w800,
+                      color: Color(0xFF19202D),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: [
+                      Row(
+                        children: [
+                          SvgPicture.asset('assets/svg/calendar_icon.svg'),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          const Text(
+                            '11th May',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 11,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFF9397A0),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        width: 55,
+                      ),
+                      Row(
+                        children: [
+                          SvgPicture.asset('assets/svg/time_icon.svg'),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          const Text(
+                            '10 : 15 am',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 11,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFF9397A0),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );

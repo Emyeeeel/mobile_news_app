@@ -279,7 +279,20 @@ class _ProfilescreenState extends State<Profilescreen> {
             ),
             const SizedBox(
               height: 19,
-            )
+            ),
+            SizedBox(
+              height: 215,
+              child: ListView.builder(
+                  itemCount: 3,
+                  scrollDirection: Axis.vertical,
+                  itemBuilder: (context, index) {
+                    if (index == 1) {
+                      return VerticalList_2();
+                    } else {
+                      return VerticalList();
+                    }
+                  }),
+            ),
           ],
         ),
       )),

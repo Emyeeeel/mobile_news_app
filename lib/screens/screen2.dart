@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mobile_news_app/listviewWidgets.dart';
 
 class Aboutscreen extends StatefulWidget {
   const Aboutscreen({Key? key}) : super(key: key);
