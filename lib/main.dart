@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:mobile_news_app/screens/screen1.dart';
+import 'package:mobile_news_app/screens/screen2.dart';
 
 void main() => runApp(
       DevicePreview(
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: const Color(0xFFFCFCFC),
       ),
-      home: const Homescreen(),
+      home: const Aboutscreen(),
     );
   }
 }
