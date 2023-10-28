@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mobile_news_app/screens/screen1.dart';
+import 'package:mobile_news_app/screens/screen3.dart';
 
 class Aboutscreen extends StatefulWidget {
   const Aboutscreen({Key? key}) : super(key: key);
@@ -10,7 +12,7 @@ class Aboutscreen extends StatefulWidget {
 }
 
 class _AboutscreenState extends State<Aboutscreen> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
 
   void _onItemTapped(int index) {
     setState(() {
@@ -63,28 +65,35 @@ class _AboutscreenState extends State<Aboutscreen> {
               padding: const EdgeInsets.fromLTRB(30, 30, 30, 0),
               child: Row(
                 children: [
-                  Stack(
-                    children: [
-                      SizedBox(
-                        child: Container(
-                          width: 50,
-                          height: 50,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            border: Border.all(
-                              color: Colors.white,
-                              width: 2.0,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const Homescreen(),
+                      ));
+                    },
+                    child: Stack(
+                      children: [
+                        SizedBox(
+                          child: Container(
+                            width: 50,
+                            height: 50,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              border: Border.all(
+                                color: Colors.white,
+                                width: 2.0,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Positioned.fill(
-                        child: Center(
-                          child: SvgPicture.asset(
-                              'assets/svg/arrow_back_icon.svg'),
+                        Positioned.fill(
+                          child: Center(
+                            child: SvgPicture.asset(
+                                'assets/svg/arrow_back_icon.svg'),
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   Spacer(),
                   Stack(
@@ -143,8 +152,8 @@ class _AboutscreenState extends State<Aboutscreen> {
                           style: TextStyle(
                             fontFamily: 'Gellix',
                             fontSize: 32,
-                            fontWeight: FontWeight.w800,
-                            color: Color(0xFF000000),
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xFF19202D),
                           ),
                         ),
                         const Text(
@@ -152,8 +161,8 @@ class _AboutscreenState extends State<Aboutscreen> {
                           style: TextStyle(
                             fontFamily: 'Gellix',
                             fontSize: 32,
-                            fontWeight: FontWeight.w800,
-                            color: Color(0xFF000000),
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xFF19202D),
                           ),
                         ),
                         const SizedBox(
@@ -191,8 +200,8 @@ class _AboutscreenState extends State<Aboutscreen> {
                                     style: TextStyle(
                                       fontFamily: 'Gellix',
                                       fontSize: 13,
-                                      fontWeight: FontWeight.w800,
-                                      color: Colors.black,
+                                      fontWeight: FontWeight.w400,
+                                      color: Color(0xFF9397A0),
                                     ),
                                   ),
                                   const SizedBox(
@@ -203,8 +212,8 @@ class _AboutscreenState extends State<Aboutscreen> {
                                     style: TextStyle(
                                       fontFamily: 'Gellix',
                                       fontSize: 13,
-                                      fontWeight: FontWeight.w800,
-                                      color: Colors.black,
+                                      fontWeight: FontWeight.w400,
+                                      color: Color(0xFF9397A0),
                                     ),
                                   ),
                                   const SizedBox(
@@ -215,8 +224,8 @@ class _AboutscreenState extends State<Aboutscreen> {
                                     style: TextStyle(
                                       fontFamily: 'Gellix',
                                       fontSize: 13,
-                                      fontWeight: FontWeight.w800,
-                                      color: Colors.black,
+                                      fontWeight: FontWeight.w400,
+                                      color: Color(0xFF9397A0),
                                     ),
                                   ),
                                   const SizedBox(
@@ -227,8 +236,8 @@ class _AboutscreenState extends State<Aboutscreen> {
                                     style: TextStyle(
                                       fontFamily: 'Gellix',
                                       fontSize: 13,
-                                      fontWeight: FontWeight.w800,
-                                      color: Colors.black,
+                                      fontWeight: FontWeight.w400,
+                                      color: Color(0xFF9397A0),
                                     ),
                                   ),
                                 ],
@@ -243,12 +252,12 @@ class _AboutscreenState extends State<Aboutscreen> {
                           width: 321,
                           height: 139,
                           child: Text(
-                            'Just say anything, George, say what ever is natural, the first thing that comes to your mind. Take that you mutated son-of-a-bitch. My pine, why you. You space bastard, you killed a pine. You do? Yeah, it is 8:00. Hey, McFly, I thought I told you never.',
+                            'Just say anything, George, say what ever\'s natural, the first thing that comes to your mind. Take that you mutated son-of-a-bitch. My pine, why you. You space bastard, you killed a pine. You do? Yeah, it\'s 8:00. Hey, McFly, I thought I told you never.',
                             style: TextStyle(
                               fontFamily: 'Gellix',
                               fontSize: 16,
-                              fontWeight: FontWeight.w800,
-                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                              color: Color(0xFF19202D),
                             ),
                           ),
                         )
@@ -263,12 +272,19 @@ class _AboutscreenState extends State<Aboutscreen> {
         bottomNavigationBar: BottomNavigationBar(
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(
-                _selectedIndex == 0
-                    ? 'assets/svg/home_selected_icon.svg'
-                    : 'assets/svg/home_unselected_icon.svg',
-                width: 24,
-                height: 24,
+              icon: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const Homescreen(),
+                  ));
+                },
+                child: SvgPicture.asset(
+                  _selectedIndex == 0
+                      ? 'assets/svg/home_selected_icon.svg'
+                      : 'assets/svg/home_unselected_icon.svg',
+                  width: 24,
+                  height: 24,
+                ),
               ),
               label: 'Home',
             ),
@@ -293,12 +309,19 @@ class _AboutscreenState extends State<Aboutscreen> {
               label: 'Notification',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(
-                _selectedIndex == 3
-                    ? 'assets/svg/profile_selected_icon.svg'
-                    : 'assets/svg/profile_unselected_icon.svg',
-                width: 24,
-                height: 24,
+              icon: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const Profilescreen(),
+                  ));
+                },
+                child: SvgPicture.asset(
+                  _selectedIndex == 3
+                      ? 'assets/svg/profile_selected_icon.svg'
+                      : 'assets/svg/profile_unselected_icon.svg',
+                  width: 24,
+                  height: 24,
+                ),
               ),
               label: 'Profile',
             ),
