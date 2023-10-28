@@ -115,15 +115,24 @@ class _AboutscreenState extends State<Aboutscreen> {
                 ],
               ),
             ),
-            Stack(
-              children: [
-                Container(
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: ClipRRect(
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(50),
+                  topRight: Radius.circular(50),
+                ),
+                child: Container(
                   width: 375,
-                  height: 453,
-                  decoration: BoxDecoration(),
-                )
-              ],
-            )
+                  height: 453 - 82,
+                  decoration: const BoxDecoration(
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
