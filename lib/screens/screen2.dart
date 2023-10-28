@@ -22,27 +22,6 @@ class _AboutscreenState extends State<Aboutscreen> {
 
       _selectedIndex = index;
 
-      final selectedSVGs = [
-        'assets/svg/home_selected_icon.svg',
-        'assets/svg/bookmark_selected_icon.svg',
-        'assets/svg/notification_selected_icon.svg',
-        'assets/svg/profile_selected_icon.svg',
-      ];
-      final unselectedSVGs = [
-        'assets/svg/home_unselected_icon.svg',
-        'assets/svg/bookmark_unselected_icon.svg',
-        'assets/svg/notification_unselected_icon.svg',
-        'assets/svg/profile_unselected_icon.svg',
-      ];
-
-      final selectedSVGPath = selectedSVGs[index];
-      final unselectedSVGPath = unselectedSVGs[index];
-
-      final selectedSVGWidget = SvgPicture.asset(
-        selectedSVGPath,
-        width: 24,
-        height: 24,
-      );
     });
   }
 
