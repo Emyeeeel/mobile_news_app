@@ -284,7 +284,11 @@ class _HomescreenState extends State<Homescreen> {
                         itemCount: 3,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                          return HorizontalList1();
+                          if (index == 1) {
+                            return HorizontalList1_2();
+                          } else {
+                            return HorizontalList1();
+                          }
                         })),
               ],
             ),
