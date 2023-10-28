@@ -91,6 +91,131 @@ class _ProfilescreenState extends State<Profilescreen> {
                   ),
                 )
               ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  width: 270,
+                  height: 28,
+                  child: Text(
+                    'Every piece of chocolate I ever ate is getting back at me.. desserts are very revengeful..',
+                    style: TextStyle(
+                      fontFamily: 'Gellix',
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 33,
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Stack(
+                  children: [
+                    Container(
+                      width: MediaQuery.of(context).size.width - 60,
+                      height: 95,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25),
+                          color: const Color(0xFF19202D)),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.all(28),
+                      child: Column(
+                        children: [
+                          Text(
+                            '54.21K',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFFFFFFFF),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Followers',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 12,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFFFFFFFF),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(140, 28, 28, 28),
+                      child: Column(
+                        children: [
+                          Text(
+                            '2.11K',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFFFFFFFF),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Posts',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 12,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFFFFFFFF),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    // vertical divider
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(238, 28, 28, 28),
+                      child: Column(
+                        children: [
+                          Text(
+                            '36.40K',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFFFFFFFF),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Followers',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 12,
+                              fontWeight: FontWeight.w800,
+                              color: Color(0xFFFFFFFF),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ],
             )
           ],
         ),
