@@ -119,18 +119,144 @@ class _AboutscreenState extends State<Aboutscreen> {
               bottom: 0,
               left: 0,
               right: 0,
-              child: ClipRRect(
-                borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(50),
-                  topRight: Radius.circular(50),
-                ),
-                child: Container(
-                  width: 375,
-                  height: 453 - 82,
-                  decoration: const BoxDecoration(
-                    color: Colors.black,
+              child: Stack(
+                children: [
+                  ClipRRect(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(50),
+                      topRight: Radius.circular(50),
+                    ),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 453 - 82,
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
-                ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(30, 27, 30, 0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Unravel mysteries',
+                          style: TextStyle(
+                            fontFamily: 'Gellix',
+                            fontSize: 32,
+                            fontWeight: FontWeight.w800,
+                            color: Color(0xFF000000),
+                          ),
+                        ),
+                        const Text(
+                          'of the Maldives',
+                          style: TextStyle(
+                            fontFamily: 'Gellix',
+                            fontSize: 32,
+                            fontWeight: FontWeight.w800,
+                            color: Color(0xFF000000),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Stack(
+                          children: [
+                            Container(
+                              width: 315,
+                              height: 54,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  border: Border.all(
+                                      color: const Color(0xFFEEEEEE),
+                                      width: 2.0)),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(12, 14, 0, 14),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: 26,
+                                    height: 26,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(25),
+                                        image: const DecorationImage(
+                                            image: AssetImage(
+                                                'assets/png/profile3.png'))),
+                                  ),
+                                  const SizedBox(
+                                    width: 13,
+                                  ),
+                                  const Text(
+                                    'Keanu Carpent',
+                                    style: TextStyle(
+                                      fontFamily: 'Gellix',
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w800,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 2,
+                                  ),
+                                  const Text(
+                                    'May 17',
+                                    style: TextStyle(
+                                      fontFamily: 'Gellix',
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w800,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 6,
+                                  ),
+                                  const Text(
+                                    '•',
+                                    style: TextStyle(
+                                      fontFamily: 'Gellix',
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w800,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 8,
+                                  ),
+                                  const Text(
+                                    '8 min read',
+                                    style: TextStyle(
+                                      fontFamily: 'Gellix',
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w800,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                        const SizedBox(
+                          height: 21,
+                        ),
+                        const SizedBox(
+                          width: 321,
+                          height: 139,
+                          child: Text(
+                            'Just say anything, George, say what ever is natural, the first thing that comes to your mind. Take that you mutated son-of-a-bitch. My pine, why you. You space bastard, you killed a pine. You do? Yeah, it is 8:00. Hey, McFly, I thought I told you never.',
+                            style: TextStyle(
+                              fontFamily: 'Gellix',
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.black,
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  )
+                ],
               ),
             ),
           ],
