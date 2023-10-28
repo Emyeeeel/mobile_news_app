@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mobile_news_app/listviewWidgets.dart';
 import 'package:mobile_news_app/screens/screen2.dart';
+import 'package:mobile_news_app/screens/screen3.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({Key? key}) : super(key: key);
@@ -21,28 +22,6 @@ class _HomescreenState extends State<Homescreen> {
       }
 
       _selectedIndex = index;
-
-      final selectedSVGs = [
-        'assets/svg/home_selected_icon.svg',
-        'assets/svg/bookmark_selected_icon.svg',
-        'assets/svg/notification_selected_icon.svg',
-        'assets/svg/profile_selected_icon.svg',
-      ];
-      final unselectedSVGs = [
-        'assets/svg/home_unselected_icon.svg',
-        'assets/svg/bookmark_unselected_icon.svg',
-        'assets/svg/notification_unselected_icon.svg',
-        'assets/svg/profile_unselected_icon.svg',
-      ];
-
-      final selectedSVGPath = selectedSVGs[index];
-      final unselectedSVGPath = unselectedSVGs[index];
-
-      final selectedSVGWidget = SvgPicture.asset(
-        selectedSVGPath,
-        width: 24,
-        height: 24,
-      );
     });
   }
 
@@ -335,12 +314,19 @@ class _HomescreenState extends State<Homescreen> {
               label: 'Notification',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(
-                _selectedIndex == 3
-                    ? 'assets/svg/profile_selected_icon.svg'
-                    : 'assets/svg/profile_unselected_icon.svg',
-                width: 24,
-                height: 24,
+              icon: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const Profilescreen(),
+                  ));
+                },
+                child: SvgPicture.asset(
+                  _selectedIndex == 3
+                      ? 'assets/svg/profile_selected_icon.svg'
+                      : 'assets/svg/profile_unselected_icon.svg',
+                  width: 24,
+                  height: 24,
+                ),
               ),
               label: 'Profile',
             ),
