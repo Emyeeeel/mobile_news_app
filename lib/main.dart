@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:mobile_news_app/screens/screen1.dart';
 import 'package:mobile_news_app/screens/screen2.dart';
+import 'package:mobile_news_app/screens/screen3.dart';
 
 void main() => runApp(
       DevicePreview(
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: const Color(0xFFFCFCFC),
       ),
-      home: const Aboutscreen(),
+      home: const Profilescreen(),
     );
   }
 }
