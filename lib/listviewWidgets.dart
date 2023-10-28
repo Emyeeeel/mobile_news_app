@@ -183,7 +183,7 @@ class HorizontalList_2 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Feel the thrill on the only',
+                          'Hong Kong wins over Wall',
                           style: TextStyle(
                             fontFamily: 'Gellix',
                             fontSize: 15,
@@ -195,7 +195,7 @@ class HorizontalList_2 extends StatelessWidget {
                           height: 4,
                         ),
                         Text(
-                          'surf simulator in Maldives',
+                          'Street CEOs after lifting strict',
                           style: TextStyle(
                             fontFamily: 'Gellix',
                             fontSize: 15,
@@ -229,7 +229,7 @@ class HorizontalList_2 extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'name',
+                                  'Pan Bong',
                                   style: TextStyle(
                                     fontFamily: 'Gellix',
                                     fontSize: 12,
@@ -241,7 +241,7 @@ class HorizontalList_2 extends StatelessWidget {
                                   height: 5,
                                 ),
                                 Text(
-                                  'date',
+                                  'Jan. 3, 2022',
                                   style: TextStyle(
                                     fontFamily: 'Gellix',
                                     fontSize: 12,
@@ -295,32 +295,61 @@ class HorizontalList1 extends StatelessWidget {
         child: SizedBox(
           width: 208,
           height: 88,
-          child: Stack(
-            children: [
-              Row(
-                children: [
-                  SizedBox(
-                    width: 70,
-                    height: 70,
-                    child: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          image: const DecorationImage(
-                              image: AssetImage("assets/png/Vector.png"))),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+            child: Row(
+              children: [
+                Stack(
+                  children: [
+                    SizedBox(
+                      width: 70,
+                      height: 70,
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25),
+                            image: const DecorationImage(
+                                image: AssetImage("assets/png/listview2.png"))),
+                      ),
                     ),
-                  ),
-                  const Text(
-                    '#Sports',
-                    style: TextStyle(
-                      fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0),
+                    Positioned(
+                      top: (70 - 18) / 2,
+                      left: (70 - 18) / 2,
+                      child: SizedBox(
+                        child: SvgPicture.asset('assets/svg/play_icon.svg'),
+                        width: 18,
+                        height: 18,
+                      ),
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  width: 11,
+                ),
+                const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Top Trending',
+                      style: TextStyle(
+                        fontFamily: 'Gellix',
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFF9397A0),
+                      ),
                     ),
-                  ),
-                ],
-              )
-            ],
+                    Text(
+                      'Islands in 2022',
+                      style: TextStyle(
+                        fontFamily: 'Gellix',
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFF9397A0),
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ),

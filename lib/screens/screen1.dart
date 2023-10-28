@@ -227,7 +227,7 @@ class _HomescreenState extends State<Homescreen> {
                 SizedBox(
                   height: 304,
                   child: ListView.builder(
-                      itemCount: 2,
+                      itemCount: 3,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         if (index == 1) {
@@ -281,7 +281,7 @@ class _HomescreenState extends State<Homescreen> {
                 SizedBox(
                     height: 88,
                     child: ListView.builder(
-                        itemCount: 2,
+                        itemCount: 3,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return HorizontalList1();
