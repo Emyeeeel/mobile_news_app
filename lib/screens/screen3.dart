@@ -45,7 +45,7 @@ class _ProfilescreenState extends State<Profilescreen> {
                             style: TextStyle(
                               fontFamily: 'Gellix',
                               fontSize: 16,
-                              fontWeight: FontWeight.w800,
+                              fontWeight: FontWeight.w700,
                               color: Color(0xFF000000),
                             ),
                           ),
@@ -56,8 +56,8 @@ class _ProfilescreenState extends State<Profilescreen> {
                             'Author & Writer',
                             style: TextStyle(
                               fontFamily: 'Gellix',
-                              fontSize: 16,
-                              fontWeight: FontWeight.w800,
+                              fontSize: 12,
+                              fontWeight: FontWeight.w400,
                               color: Color(0xFF000000),
                             ),
                           ),
@@ -85,8 +85,8 @@ class _ProfilescreenState extends State<Profilescreen> {
                                   'Following',
                                   style: TextStyle(
                                     fontFamily: 'Gellix',
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w800,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
                                     color: Color(0xFFFFFFFF),
                                   ),
                                 ),
@@ -111,8 +111,8 @@ class _ProfilescreenState extends State<Profilescreen> {
                           style: TextStyle(
                             fontFamily: 'Gellix',
                             fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            color: Color(0xFF9397A0),
                           ),
                         ),
                       ),
@@ -135,110 +135,106 @@ class _ProfilescreenState extends State<Profilescreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.all(28),
-                            child: Row(
-                              children: [
-                                const Column(
-                                  children: [
-                                    Text(
-                                      '54.21K',
-                                      style: TextStyle(
-                                        fontFamily: 'Gellix',
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w800,
-                                        color: Color(0xFFFFFFFF),
+                            child: SizedBox(
+                              width: 262,
+                              height: 38,
+                              child: Row(
+                                children: [
+                                  const Column(
+                                    children: [
+                                      Text(
+                                        '54.21K',
+                                        style: TextStyle(
+                                          fontFamily: 'Gellix',
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w700,
+                                          color: Color(0xFFFFFFFF),
+                                        ),
                                       ),
-                                    ),
-                                    SizedBox(
-                                      height: 5,
-                                    ),
-                                    Text(
-                                      'Followers',
-                                      style: TextStyle(
-                                        fontFamily: 'Gellix',
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w800,
-                                        color: Color(0xFFFFFFFF),
+                                      SizedBox(
+                                        height: 5,
                                       ),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(
-                                  width: 28,
-                                ),
-                                SizedBox(
-                                  child: SvgPicture.asset(
-                                    'assets/svg/vertical_divider.svg',
-                                    height: 38,
-                                    width: 2,
+                                      Text(
+                                        'Followers',
+                                        style: TextStyle(
+                                          fontFamily: 'Gellix',
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w500,
+                                          color: Color(0xFFFFFFFF),
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                ),
-                                const SizedBox(
-                                  width: 28,
-                                ),
-                                const Column(
-                                  children: [
-                                    Text(
-                                      '2.11K',
-                                      style: TextStyle(
-                                        fontFamily: 'Gellix',
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w800,
-                                        color: Color(0xFFFFFFFF),
-                                      ),
+                                  const Spacer(), // Add Spacer to evenly space between columns
+                                  SizedBox(
+                                    child: SvgPicture.asset(
+                                      'assets/svg/vertical_divider.svg',
+                                      height: 38,
+                                      width: 2,
                                     ),
-                                    SizedBox(
-                                      height: 5,
-                                    ),
-                                    Text(
-                                      'Posts',
-                                      style: TextStyle(
-                                        fontFamily: 'Gellix',
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w800,
-                                        color: Color(0xFFFFFFFF),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(
-                                  width: 28,
-                                ),
-                                SizedBox(
-                                  child: SvgPicture.asset(
-                                    'assets/svg/vertical_divider.svg',
-                                    height: 38,
-                                    width: 2,
                                   ),
-                                ),
-                                const SizedBox(
-                                  width: 28,
-                                ),
-                                const Column(
-                                  children: [
-                                    Text(
-                                      '36.40K',
-                                      style: TextStyle(
-                                        fontFamily: 'Gellix',
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w800,
-                                        color: Color(0xFFFFFFFF),
+                                  const Spacer(), // Add Spacer to evenly space between columns
+                                  const Column(
+                                    children: [
+                                      Text(
+                                        '2.11K',
+                                        style: TextStyle(
+                                          fontFamily: 'Gellix',
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w700,
+                                          color: Color(0xFFFFFFFF),
+                                        ),
                                       ),
-                                    ),
-                                    SizedBox(
-                                      height: 5,
-                                    ),
-                                    Text(
-                                      'Followers',
-                                      style: TextStyle(
-                                        fontFamily: 'Gellix',
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w800,
-                                        color: Color(0xFFFFFFFF),
+                                      SizedBox(
+                                        height: 5,
                                       ),
+                                      Text(
+                                        'Posts',
+                                        style: TextStyle(
+                                          fontFamily: 'Gellix',
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w500,
+                                          color: Color(0xFFFFFFFF),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const Spacer(), // Add Spacer to evenly space between columns
+                                  SizedBox(
+                                    child: SvgPicture.asset(
+                                      'assets/svg/vertical_divider.svg',
+                                      height: 38,
+                                      width: 2,
                                     ),
-                                  ],
-                                ),
-                              ],
+                                  ),
+                                  const Spacer(), // Add Spacer to evenly space between columns
+                                  const Column(
+                                    children: [
+                                      Text(
+                                        '36.40K',
+                                        style: TextStyle(
+                                          fontFamily: 'Gellix',
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w700,
+                                          color: Color(0xFFFFFFFF),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(
+                                        'Followers',
+                                        style: TextStyle(
+                                          fontFamily: 'Gellix',
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w500,
+                                          color: Color(0xFFFFFFFF),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
                           )
                         ],
@@ -258,7 +254,7 @@ class _ProfilescreenState extends State<Profilescreen> {
                           style: TextStyle(
                             fontFamily: 'Gellix',
                             fontSize: 17,
-                            fontWeight: FontWeight.w800,
+                            fontWeight: FontWeight.w700,
                             color: Color(0xFF19202D),
                           ),
                         ),
@@ -273,7 +269,7 @@ class _ProfilescreenState extends State<Profilescreen> {
                               style: TextStyle(
                                 fontFamily: 'Gellix',
                                 fontSize: 12,
-                                fontWeight: FontWeight.w800,
+                                fontWeight: FontWeight.w500,
                                 color: Color(0xFF5474FD),
                               ),
                             ),
@@ -310,7 +306,7 @@ class _ProfilescreenState extends State<Profilescreen> {
                         style: TextStyle(
                           fontFamily: 'Gellix',
                           fontSize: 17,
-                          fontWeight: FontWeight.w800,
+                          fontWeight: FontWeight.w700,
                           color: Color(0xFF19202D),
                         ),
                       ),

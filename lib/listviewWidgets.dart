@@ -511,7 +511,7 @@ class VerticalList extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Gellix',
                       fontSize: 10,
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.w400,
                       color: Color(0xFF9397A0),
                     ),
                   ),
@@ -523,7 +523,7 @@ class VerticalList extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Gellix',
                       fontSize: 14,
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.w600,
                       color: Color(0xFF19202D),
                     ),
                   ),
@@ -535,7 +535,7 @@ class VerticalList extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Gellix',
                       fontSize: 14,
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.w600,
                       color: Color(0xFF19202D),
                     ),
                   ),
@@ -555,7 +555,7 @@ class VerticalList extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Gellix',
                               fontSize: 11,
-                              fontWeight: FontWeight.w800,
+                              fontWeight: FontWeight.w500,
                               color: Color(0xFF9397A0),
                             ),
                           ),
@@ -575,7 +575,7 @@ class VerticalList extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Gellix',
                               fontSize: 11,
-                              fontWeight: FontWeight.w800,
+                              fontWeight: FontWeight.w500,
                               color: Color(0xFF9397A0),
                             ),
                           ),
@@ -635,7 +635,7 @@ class VerticalList_2 extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Gellix',
                       fontSize: 10,
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.w400,
                       color: Color(0xFF9397A0),
                     ),
                   ),
@@ -647,7 +647,7 @@ class VerticalList_2 extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Gellix',
                       fontSize: 14,
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.w600,
                       color: Color(0xFF19202D),
                     ),
                   ),
@@ -659,7 +659,7 @@ class VerticalList_2 extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Gellix',
                       fontSize: 14,
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.w600,
                       color: Color(0xFF19202D),
                     ),
                   ),
@@ -679,7 +679,7 @@ class VerticalList_2 extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Gellix',
                               fontSize: 11,
-                              fontWeight: FontWeight.w800,
+                              fontWeight: FontWeight.w500,
                               color: Color(0xFF9397A0),
                             ),
                           ),
@@ -699,7 +699,7 @@ class VerticalList_2 extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Gellix',
                               fontSize: 11,
-                              fontWeight: FontWeight.w800,
+                              fontWeight: FontWeight.w500,
                               color: Color(0xFF9397A0),
                             ),
                           ),
