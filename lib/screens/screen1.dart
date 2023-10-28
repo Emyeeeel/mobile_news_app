@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mobile_news_app/listviewWidgets.dart';
+import 'package:mobile_news_app/screens/screen2.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({Key? key}) : super(key: key);
@@ -307,12 +308,19 @@ class _HomescreenState extends State<Homescreen> {
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(
-                _selectedIndex == 1
-                    ? 'assets/svg/bookmark_selected_icon.svg'
-                    : 'assets/svg/bookmark_unselected_icon.svg',
-                width: 24,
-                height: 24,
+              icon: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const Aboutscreen(),
+                  ));
+                },
+                child: SvgPicture.asset(
+                  _selectedIndex == 1
+                      ? 'assets/svg/bookmark_selected_icon.svg'
+                      : 'assets/svg/bookmark_unselected_icon.svg',
+                  width: 24,
+                  height: 24,
+                ),
               ),
               label: 'Bookmark',
             ),
