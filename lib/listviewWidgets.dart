@@ -716,3 +716,49 @@ class VerticalList_2 extends StatelessWidget {
     );
   }
 }
+
+class HorizontalList3 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+      child: SizedBox(
+          width: 248,
+          height: 143,
+          child: Stack(
+            children: [
+              Container(
+                  width: 248,
+                  height: 143,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      image: const DecorationImage(
+                          image: AssetImage('assets/png/listview4.png')))),
+            ],
+          )),
+    );
+  }
+}
+
+class HorizontalList3_2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+      child: SizedBox(
+          width: 248,
+          height: 143,
+          child: Stack(
+            children: [
+              Container(
+                  width: 248,
+                  height: 143,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      image: const DecorationImage(
+                          image: AssetImage('assets/png/listview4_2.png')))),
+            ],
+          )),
+    );
+  }
+}
