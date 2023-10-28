@@ -104,8 +104,8 @@ class HorizontalList extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Gellix',
                                     fontSize: 12,
-                                    fontWeight: FontWeight.w500,
-                                    color: Color(0xFF19202D),
+                                    fontWeight: FontWeight.w400,
+                                    color: Color(0xFF9397A0),
                                   ),
                                 ),
                               ],
@@ -245,8 +245,8 @@ class HorizontalList_2 extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Gellix',
                                     fontSize: 12,
-                                    fontWeight: FontWeight.w500,
-                                    color: Color(0xFF19202D),
+                                    fontWeight: FontWeight.w400,
+                                    color: Color(0xFF9397A0),
                                   ),
                                 ),
                               ],
@@ -329,9 +329,9 @@ class HorizontalList1 extends StatelessWidget {
                     'Top Trending',
                     style: TextStyle(
                       fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFF19202D),
                     ),
                   ),
                   const SizedBox(
@@ -341,9 +341,9 @@ class HorizontalList1 extends StatelessWidget {
                     'Islands in 2022',
                     style: TextStyle(
                       fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFF19202D),
                     ),
                   ),
                   const SizedBox(
@@ -422,9 +422,9 @@ class HorizontalList1_2 extends StatelessWidget {
                     'China',
                     style: TextStyle(
                       fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFF19202D),
                     ),
                   ),
                   const SizedBox(
@@ -434,9 +434,9 @@ class HorizontalList1_2 extends StatelessWidget {
                     'Trading',
                     style: TextStyle(
                       fontFamily: 'Gellix',
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF9397A0),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFF19202D),
                     ),
                   ),
                   const SizedBox(

@@ -89,7 +89,7 @@ class _HomescreenState extends State<Homescreen> {
                             style: TextStyle(
                               fontFamily: 'Gellix',
                               fontSize: 16,
-                              fontWeight: FontWeight.w800,
+                              fontWeight: FontWeight.w700,
                               color: Color(0xFF19202D),
                             ),
                           ),
@@ -252,7 +252,7 @@ class _HomescreenState extends State<Homescreen> {
                             style: TextStyle(
                               fontFamily: 'Gellix',
                               fontSize: 17,
-                              fontWeight: FontWeight.w800,
+                              fontWeight: FontWeight.w700,
                               color: Color(0xFF19202D),
                             ),
                           ),
