@@ -468,3 +468,96 @@ class HorizontalList1_2 extends StatelessWidget {
     );
   }
 }
+
+class VerticalList extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+      child: SizedBox(
+        width: 208,
+        height: 88,
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+          child: Row(
+            children: [
+              Stack(
+                children: [
+                  SizedBox(
+                    width: 70,
+                    height: 70,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25),
+                          image: const DecorationImage(
+                              image: AssetImage("assets/png/listview2_2.png"))),
+                    ),
+                  ),
+                  Positioned(
+                    top: (70 - 18) / 2,
+                    left: (70 - 18) / 2,
+                    child: SizedBox(
+                      child: SvgPicture.asset('assets/svg/play_icon.svg'),
+                      width: 18,
+                      height: 18,
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(
+                width: 11,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'China',
+                    style: TextStyle(
+                      fontFamily: 'Gellix',
+                      fontSize: 12,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF9397A0),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 3,
+                  ),
+                  const Text(
+                    'Trading',
+                    style: TextStyle(
+                      fontFamily: 'Gellix',
+                      fontSize: 12,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xFF9397A0),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 9,
+                  ),
+                  Row(
+                    children: [
+                      SvgPicture.asset('assets/svg/eye_icon.svg'),
+                      const SizedBox(
+                        width: 4,
+                      ),
+                      const Text(
+                        '40,999',
+                        style: TextStyle(
+                          fontFamily: 'Gellix',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF9397A0),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

@@ -128,87 +128,110 @@ class _ProfilescreenState extends State<Profilescreen> {
                           borderRadius: BorderRadius.circular(25),
                           color: const Color(0xFF19202D)),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.all(28),
-                      child: Column(
+                    Padding(
+                      padding: const EdgeInsets.all(28),
+                      child: Row(
                         children: [
-                          Text(
-                            '54.21K',
-                            style: TextStyle(
-                              fontFamily: 'Gellix',
-                              fontSize: 16,
-                              fontWeight: FontWeight.w800,
-                              color: Color(0xFFFFFFFF),
-                            ),
+                          const Column(
+                            children: [
+                              Text(
+                                '54.21K',
+                                style: TextStyle(
+                                  fontFamily: 'Gellix',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w800,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                'Followers',
+                                style: TextStyle(
+                                  fontFamily: 'Gellix',
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w800,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            width: 28,
                           ),
                           SizedBox(
-                            height: 5,
-                          ),
-                          Text(
-                            'Followers',
-                            style: TextStyle(
-                              fontFamily: 'Gellix',
-                              fontSize: 12,
-                              fontWeight: FontWeight.w800,
-                              color: Color(0xFFFFFFFF),
+                            child: SvgPicture.asset(
+                              'assets/svg/vertical_divider.svg',
+                              height: 38,
+                              width: 2,
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.fromLTRB(140, 28, 28, 28),
-                      child: Column(
-                        children: [
-                          Text(
-                            '2.11K',
-                            style: TextStyle(
-                              fontFamily: 'Gellix',
-                              fontSize: 16,
-                              fontWeight: FontWeight.w800,
-                              color: Color(0xFFFFFFFF),
-                            ),
+                          const SizedBox(
+                            width: 28,
+                          ),
+                          const Column(
+                            children: [
+                              Text(
+                                '2.11K',
+                                style: TextStyle(
+                                  fontFamily: 'Gellix',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w800,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                'Posts',
+                                style: TextStyle(
+                                  fontFamily: 'Gellix',
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w800,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            width: 28,
                           ),
                           SizedBox(
-                            height: 5,
-                          ),
-                          Text(
-                            'Posts',
-                            style: TextStyle(
-                              fontFamily: 'Gellix',
-                              fontSize: 12,
-                              fontWeight: FontWeight.w800,
-                              color: Color(0xFFFFFFFF),
+                            child: SvgPicture.asset(
+                              'assets/svg/vertical_divider.svg',
+                              height: 38,
+                              width: 2,
                             ),
                           ),
-                        ],
-                      ),
-                    ),
-                    // vertical divider
-                    const Padding(
-                      padding: EdgeInsets.fromLTRB(238, 28, 28, 28),
-                      child: Column(
-                        children: [
-                          Text(
-                            '36.40K',
-                            style: TextStyle(
-                              fontFamily: 'Gellix',
-                              fontSize: 16,
-                              fontWeight: FontWeight.w800,
-                              color: Color(0xFFFFFFFF),
-                            ),
+                          const SizedBox(
+                            width: 28,
                           ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          Text(
-                            'Followers',
-                            style: TextStyle(
-                              fontFamily: 'Gellix',
-                              fontSize: 12,
-                              fontWeight: FontWeight.w800,
-                              color: Color(0xFFFFFFFF),
-                            ),
+                          const Column(
+                            children: [
+                              Text(
+                                '36.40K',
+                                style: TextStyle(
+                                  fontFamily: 'Gellix',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w800,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                'Followers',
+                                style: TextStyle(
+                                  fontFamily: 'Gellix',
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w800,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
@@ -216,6 +239,46 @@ class _ProfilescreenState extends State<Profilescreen> {
                   ],
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(0, 0, 30, 0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Elly\'s Post',
+                    style: TextStyle(
+                      fontFamily: 'Gellix',
+                      fontSize: 17,
+                      fontWeight: FontWeight.w800,
+                      color: Color(0xFF19202D),
+                    ),
+                  ),
+                  Spacer(),
+                  Column(
+                    children: [
+                      SizedBox(
+                        height: 6,
+                      ),
+                      Text(
+                        'View all',
+                        style: TextStyle(
+                          fontFamily: 'Gellix',
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800,
+                          color: Color(0xFF5474FD),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 19,
             )
           ],
         ),
